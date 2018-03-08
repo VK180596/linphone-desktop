@@ -6,11 +6,12 @@ import Linphone.Styles 1.0
 import Utils 1.0
 
 import App.Styles 1.0
+import '../../../../modules/Linphone/Codecs/CodecsWindow.js' as Logic
 
 // =============================================================================
 
 AssistantAbstractView {
-  property var fileDownloader
+  //property var fileDownloader
 
   title: qsTr('DO YOU AGREE TO DOWNLOAD \nOPENH264 VIDEO CODEC PROVIDED BY CISCO SYSTEMS,INC.?')
 
@@ -43,14 +44,20 @@ AssistantAbstractView {
   // ---------------------------------------------------------------------------
   // fileDownloader.
   // ---------------------------------------------------------------------------
-
-  Connections {
-    target: fileDownloader
-   
-    onDownloadingChanged: {
-       assistant.pushView('DownloadProgressBar', {
+ FileDownloader  {
+    id: fileDownloader
+    url: 'http://ciscobinary.openh264.org/libopenh264-1.5.0-android19.so.bz2'
+	onDownloadingChanged: {
+		  assistant.pushView('DownloadProgressBar', {
           fileDownloader: fileDownloader
-       })
+          })
     }
-  }
+	onDownloadFinished: {
+		window.attachVirtualWindow(Utils.buildDialogUri('InfoDialog'), {
+        descriptionText:  qsTr('Codec DownloadFinished.')
+        }, function (status) {
+			window.setView('Home')
+		})
+	} 
+  }  
 }

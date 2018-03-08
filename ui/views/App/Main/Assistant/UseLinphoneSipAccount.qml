@@ -86,9 +86,7 @@ AssistantAbstractView {
     onLoginStatusChanged: {
       requestBlock.stop(error)
       if (!error.length) {
-		 assistant.pushView('DownloadOpenH264', {
-          fileDownloader: fileDownloader
-        })
+		 assistant.pushView('DownloadOpenH264')
       }
     }
 
@@ -115,8 +113,4 @@ AssistantAbstractView {
   TelephoneNumbersModel {
     id: telephoneNumbersModel
   }
-  FileDownloader  {
-    id: fileDownloader
-    url: 'http://ciscobinary.openh264.org/libopenh264-1.5.0-android19.so.bz2'
-  }  
 }

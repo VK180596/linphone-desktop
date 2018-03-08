@@ -205,6 +205,7 @@
 	<file>ui/modules/Common/Dialog/InfoDialog.qml</file>
     <file>ui/modules/Common/Dialog/DialogDescription.qml</file>
     <file>ui/modules/Common/Dialog/DialogPlus.qml</file>
+	<file>ui/modules/Common/Dialog/DownloadProgressBarDialog.qml</file>
     <file>ui/modules/Common/Form/ActionBar.qml</file>
     <file>ui/modules/Common/Form/ActionButton.qml</file>
     <file>ui/modules/Common/Form/ActionSwitch.qml</file>
@@ -329,6 +330,8 @@
     <file>ui/modules/Linphone/Codecs/CodecAttribute.qml</file>
     <file>ui/modules/Linphone/Codecs/CodecLegend.qml</file>
     <file>ui/modules/Linphone/Codecs/CodecsViewer.qml</file>
+
+	<file>ui/modules/Linphone/Codecs/CodecsWindow.js</file>
     <file>ui/modules/Linphone/Contact/Avatar.qml</file>
     <file>ui/modules/Linphone/Contact/ContactDescription.qml</file>
     <file>ui/modules/Linphone/Contact/Contact.qml</file>
@@ -430,6 +433,8 @@
     <file>ui/views/App/Settings/Dialogs/SettingsSipAccountsEdit.js</file>
     <file>ui/views/App/Settings/Dialogs/SettingsSipAccountsEdit.qml</file>
     <file>ui/views/App/Settings/Dialogs/SettingsVideoPreview.qml</file>
+	<file>ui/views/App/Settings/Dialogs/SettingsDownloadOpenH264.qml</file>
+	
     <file>ui/views/App/Settings/SettingsAdvanced.js</file>
     <file>ui/views/App/Settings/SettingsAdvanced.qml</file>
     <file>ui/views/App/Settings/SettingsAudio.qml</file>
@@ -470,6 +475,7 @@
     <file>ui/views/App/Styles/qmldir</file>
     <file>ui/views/App/Styles/Settings/Dialogs/SettingsSipAccountsEditStyle.qml</file>
     <file>ui/views/App/Styles/Settings/Dialogs/SettingsVideoPreviewStyle.qml</file>
+	<file>ui/views/App/Styles/Settings/Dialogs/SettingsDownloadOpenH264Style.qml</file>
     <file>ui/views/App/Styles/Settings/SettingsAdvancedStyle.qml</file>
     <file>ui/views/App/Styles/Settings/SettingsAudioStyle.qml</file>
     <file>ui/views/App/Styles/Settings/SettingsWindowStyle.qml</file>

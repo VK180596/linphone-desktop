@@ -5,6 +5,9 @@ import QtQuick.Layouts 1.3
 import Common 1.0
 import Linphone.Styles 1.0
 
+import Linphone 1.0
+import 'CodecsWindow.js' as Logic
+
 // =============================================================================
 
 Column {
@@ -13,7 +16,6 @@ Column {
   // ---------------------------------------------------------------------------
   // Header.
   // ---------------------------------------------------------------------------
-
   RowLayout {
     anchors {
       left: parent.left
@@ -60,7 +62,6 @@ Column {
   // ---------------------------------------------------------------------------
   // Codecs.
   // ---------------------------------------------------------------------------
-
   ListView {
     id: view
 
@@ -78,7 +79,6 @@ Column {
     // -----------------------------------------------------------------------
     // One codec.
     // -----------------------------------------------------------------------
-
     delegate: MouseArea {
       id: dragArea
 
@@ -167,11 +167,11 @@ Column {
 
             checked: $codec.enabled
 
-            onClicked: view.model.enableCodec(index, !checked)
+            onClicked:  !checked? Logic.downloadCodec(fileDownloader) : view.model.enableCodec(index, !checked)
           }
         }
       }
-
+      
       MouseArea {
         id: mouseArea
 
@@ -215,4 +215,12 @@ Column {
       ]
     }
   }
+  
+  FileDownloader  {
+     id: fileDownloader
+     url: 'http://ciscobinary.openh264.org/libopenh264-1.5.0-android19.so.bz2'
+	 
+	 onDownloadingChanged: Logic.downloadProgress(fileDownloader)
+	 onDownloadFinished: Logic.downloadFinished()	
+  }  
 }

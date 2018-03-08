@@ -458,27 +458,34 @@ Url du serveur non configurée.</translation>
     <name>CodecsViewer</name>
     <message>
         <source>codecMime</source>
-        <translation>Nom</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>codecEncoderDescription</source>
-        <translation>Description</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>codecEncoderClockRate</source>
-        <translation>Fréquence (Hz)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>codecBitrate</source>
-        <translation>Débit (Kbit/s)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>codecRecvFmtp</source>
-        <translation>Paramètres</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>codecStatus</source>
-        <translation>Statuts</translation>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>CodecsWindow</name>
+    <message>
+        <source>Codec DownloadFinished.</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -661,70 +668,70 @@ Url du serveur non configurée.</translation>
     <name>CreateLinphoneSipAccountWithEmail</name>
     <message>
         <source>createLinphoneSipAccountTitle</source>
-        <translation>CRÉER UN COMPTE LINPHONE</translation>
+        <translation type="unfinished">CRÉER UN COMPTE LINPHONE</translation>
     </message>
     <message>
         <source>confirmAction</source>
-        <translation>CRÉER</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>usernameLabel</source>
-        <translation>Nom d&apos;utilisateur</translation>
-    </message>
-    <message>
-        <source>emailLabel</source>
-        <translation>Email</translation>
-    </message>
-    <message>
-        <source>passwordLabel</source>
-        <translation>Mot de passe</translation>
-    </message>
-    <message>
-        <source>passwordConfirmationLabel</source>
-        <translation>Confirmation du mot de passe</translation>
-    </message>
-    <message>
-        <source>passwordConfirmationError</source>
-        <translation>Les mots de passe ne correspondent pas.</translation>
-    </message>
-    <message>
-        <source>quitWarning</source>
-        <translation>Votre compte a été créé mais il n&apos;a pas été validé. Êtes-vous sûr de vouloir quitter cette vue ?</translation>
+        <translation type="unfinished">Nom d&apos;utilisateur</translation>
     </message>
     <message>
         <source>displayNameLabel</source>
-        <translation>Nom d&apos;affichage (optionnel)</translation>
+        <translation type="unfinished">Nom d&apos;affichage (optionnel)</translation>
+    </message>
+    <message>
+        <source>emailLabel</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>passwordLabel</source>
+        <translation type="unfinished">Mot de passe</translation>
+    </message>
+    <message>
+        <source>passwordConfirmationLabel</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>passwordConfirmationError</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>quitWarning</source>
+        <translation type="unfinished">Votre compte a été créé mais il n&apos;a pas été validé. Êtes-vous sûr de vouloir quitter cette vue ?</translation>
     </message>
 </context>
 <context>
     <name>CreateLinphoneSipAccountWithPhoneNumber</name>
     <message>
         <source>createLinphoneSipAccountTitle</source>
-        <translation>CRÉER UN COMPTE LINPHONE</translation>
-    </message>
-    <message>
-        <source>countryLabel</source>
-        <translation>Pays</translation>
-    </message>
-    <message>
-        <source>phoneNumberLabel</source>
-        <translation>Numéro de téléphone</translation>
-    </message>
-    <message>
-        <source>usernameLabel</source>
-        <translation>Nom d&apos;utilisateur</translation>
-    </message>
-    <message>
-        <source>displayNameLabel</source>
-        <translation>Nom d&apos;affichage (optionnel)</translation>
+        <translation type="unfinished">CRÉER UN COMPTE LINPHONE</translation>
     </message>
     <message>
         <source>confirmAction</source>
-        <translation>CRÉER</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>countryLabel</source>
+        <translation type="unfinished">Pays</translation>
+    </message>
+    <message>
+        <source>phoneNumberLabel</source>
+        <translation type="unfinished">Numéro de téléphone</translation>
+    </message>
+    <message>
+        <source>usernameLabel</source>
+        <translation type="unfinished">Nom d&apos;utilisateur</translation>
+    </message>
+    <message>
+        <source>displayNameLabel</source>
+        <translation type="unfinished">Nom d&apos;affichage (optionnel)</translation>
     </message>
     <message>
         <source>quitWarning</source>
-        <translation>Votre compte a été créé mais il n&apos;a pas été validé. Si vous quittez cette vue, vous devrez ajouter et valider manuellement votre compte dans les 24 heures.</translation>
+        <translation type="unfinished">Votre compte a été créé mais il n&apos;a pas été validé. Êtes-vous sûr de vouloir quitter cette vue ?</translation>
     </message>
 </context>
 <context>
@@ -742,6 +749,10 @@ OPENH264 VIDEO CODEC PROVIDED BY CISCO SYSTEMS,INC.?</source>
         <source>yes</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Codec DownloadFinished.</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>DownloadProgressBar</name>
@@ -749,8 +760,11 @@ OPENH264 VIDEO CODEC PROVIDED BY CISCO SYSTEMS,INC.?</source>
         <source>DOWNLOADING CODEC</source>
         <translation type="unfinished"></translation>
     </message>
+</context>
+<context>
+    <name>DownloadProgressBarDialog</name>
     <message>
-        <source>Codec DownloadFinished.</source>
+        <source>DOWNLOADING CODEC</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1184,6 +1198,21 @@ Cliquez ici : &lt;a href=&quot;%1&quot;&gt;%1&lt;/a&gt;
     <message>
         <source>autoAnswerWithVideoLabel</source>
         <translation>Répondre autom. (avec vidéo)</translation>
+    </message>
+</context>
+<context>
+    <name>SettingsDownloadOpenH264</name>
+    <message>
+        <source>DO YOU AGREE TO DOWNLOAD OPENH264 VIDEO CODEC PROVIDED BY CISCO SYSTEMS,INC.?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>cancel</source>
+        <translation type="unfinished">ANNULER</translation>
+    </message>
+    <message>
+        <source>confirm</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

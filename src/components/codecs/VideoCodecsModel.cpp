@@ -29,11 +29,14 @@ using namespace std;
 // =============================================================================
 
 VideoCodecsModel::VideoCodecsModel (QObject *parent) : AbstractCodecsModel(parent) {
-  for (auto &codec : CoreManager::getInstance()->getCore()->getVideoPayloadTypes())
+  bool exitOpenH264=false;
+  for (auto &codec : CoreManager::getInstance()->getCore()->getVideoPayloadTypes()) {
     addCodec(codec);
-
-  // TODO: Check if codec is already available.
-  addDownloadableCodec("h264", "TODO");
+	if(codec->getMimeType() == "h264") exitOpenH264=true;
+  }
+  
+  if(!exitOpenH264)
+  addDownloadableCodec("h264", "http://ciscobinary.openh264.org/libopenh264-1.5.0-android19.so.bz2");
 }
 
 void VideoCodecsModel::updateCodecs (list<shared_ptr<linphone::PayloadType> > &codecs) {

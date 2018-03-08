@@ -458,27 +458,34 @@
     <name>CodecsViewer</name>
     <message>
         <source>codecMime</source>
-        <translation>Название</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>codecEncoderDescription</source>
-        <translation>ОПисание</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>codecEncoderClockRate</source>
-        <translation>Частота (Гц)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>codecBitrate</source>
-        <translation>Битрейт (Кбит/с)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>codecRecvFmtp</source>
-        <translation>Параметры</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>codecStatus</source>
-        <translation>Статус</translation>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>CodecsWindow</name>
+    <message>
+        <source>Codec DownloadFinished.</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -661,70 +668,70 @@
     <name>CreateLinphoneSipAccountWithEmail</name>
     <message>
         <source>createLinphoneSipAccountTitle</source>
-        <translation>СОЗДАТЬ АККАУНТ LINPHONE</translation>
+        <translation type="unfinished">СОЗДАТЬ АККАУНТ LINPHONE</translation>
     </message>
     <message>
         <source>confirmAction</source>
-        <translation>СОЗДАТЬ</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>usernameLabel</source>
-        <translation>Имя пользователя</translation>
-    </message>
-    <message>
-        <source>emailLabel</source>
-        <translation>Email</translation>
-    </message>
-    <message>
-        <source>passwordLabel</source>
-        <translation>Пароль</translation>
-    </message>
-    <message>
-        <source>passwordConfirmationLabel</source>
-        <translation>Подтверждение пароля</translation>
-    </message>
-    <message>
-        <source>passwordConfirmationError</source>
-        <translation>Введённые пароли не совпадают</translation>
-    </message>
-    <message>
-        <source>quitWarning</source>
-        <translation>Ваш аккаунт был создан, но ещё не подтверждён. Вы уверены, что хотите выйти?</translation>
+        <translation type="unfinished">Имя пользователя</translation>
     </message>
     <message>
         <source>displayNameLabel</source>
-        <translation>Отображаемое имя (не обязательно)</translation>
+        <translation type="unfinished">Отображаемое имя (не обязательно)</translation>
+    </message>
+    <message>
+        <source>emailLabel</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>passwordLabel</source>
+        <translation type="unfinished">Пароль</translation>
+    </message>
+    <message>
+        <source>passwordConfirmationLabel</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>passwordConfirmationError</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>quitWarning</source>
+        <translation type="unfinished">Ваш аккаунт был создан, но ещё не подтверждён. Вы уверены, что хотите выйти?</translation>
     </message>
 </context>
 <context>
     <name>CreateLinphoneSipAccountWithPhoneNumber</name>
     <message>
         <source>createLinphoneSipAccountTitle</source>
-        <translation>СОЗДАТЬ АККАУНТ LINPHONE</translation>
-    </message>
-    <message>
-        <source>countryLabel</source>
-        <translation>Страна</translation>
-    </message>
-    <message>
-        <source>phoneNumberLabel</source>
-        <translation>Номер телефона</translation>
-    </message>
-    <message>
-        <source>usernameLabel</source>
-        <translation>Имя пользователя</translation>
-    </message>
-    <message>
-        <source>displayNameLabel</source>
-        <translation>Отображаемое имя (не обязательно)</translation>
+        <translation type="unfinished">СОЗДАТЬ АККАУНТ LINPHONE</translation>
     </message>
     <message>
         <source>confirmAction</source>
-        <translation>СОЗДАТЬ</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>countryLabel</source>
+        <translation type="unfinished">Страна</translation>
+    </message>
+    <message>
+        <source>phoneNumberLabel</source>
+        <translation type="unfinished">Номер телефона</translation>
+    </message>
+    <message>
+        <source>usernameLabel</source>
+        <translation type="unfinished">Имя пользователя</translation>
+    </message>
+    <message>
+        <source>displayNameLabel</source>
+        <translation type="unfinished">Отображаемое имя (не обязательно)</translation>
     </message>
     <message>
         <source>quitWarning</source>
-        <translation>Ваш аккаунт был создан, но ещё не подтверждён. Если вы выйдете, вам потребуется вручную добавить и подтвердить свой аккаунт в течении 24 часов.</translation>
+        <translation type="unfinished">Ваш аккаунт был создан, но ещё не подтверждён. Вы уверены, что хотите выйти?</translation>
     </message>
 </context>
 <context>
@@ -742,6 +749,10 @@ OPENH264 VIDEO CODEC PROVIDED BY CISCO SYSTEMS,INC.?</source>
         <source>yes</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Codec DownloadFinished.</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>DownloadProgressBar</name>
@@ -749,8 +760,11 @@ OPENH264 VIDEO CODEC PROVIDED BY CISCO SYSTEMS,INC.?</source>
         <source>DOWNLOADING CODEC</source>
         <translation type="unfinished"></translation>
     </message>
+</context>
+<context>
+    <name>DownloadProgressBarDialog</name>
     <message>
-        <source>Codec DownloadFinished.</source>
+        <source>DOWNLOADING CODEC</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1184,6 +1198,21 @@ OPENH264 VIDEO CODEC PROVIDED BY CISCO SYSTEMS,INC.?</source>
     <message>
         <source>autoAnswerWithVideoLabel</source>
         <translation>Принимать вызов автоматически (с видео)</translation>
+    </message>
+</context>
+<context>
+    <name>SettingsDownloadOpenH264</name>
+    <message>
+        <source>DO YOU AGREE TO DOWNLOAD OPENH264 VIDEO CODEC PROVIDED BY CISCO SYSTEMS,INC.?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>cancel</source>
+        <translation type="unfinished">ОТМЕНА</translation>
+    </message>
+    <message>
+        <source>confirm</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

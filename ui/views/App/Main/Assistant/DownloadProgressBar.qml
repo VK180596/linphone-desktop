@@ -9,11 +9,10 @@ import Linphone.Styles 1.0
 import Utils 1.0
 
 // =============================================================================
-Item {
+Rectangle {
   id: downloadProgressBar
 
-  property var fileDownloader
-
+  property var fileDownloader 
   // ---------------------------------------------------------------------------
   anchors.alignWhenCentered : true
   // ---------------------------------------------------------------------------
@@ -47,8 +46,8 @@ Item {
          height: ChatStyle.entry.message.file.status.bar.height
          width: 500
 
-         to: fileDownloader.getTotalBytes()
-         value: fileDownloader.getReadBytes()
+         to: fileDownloader.totalBytes
+         value: fileDownloader.readBytes
          indeterminate : true
 
          background: Rectangle {
@@ -70,33 +69,9 @@ Item {
         elide: Text.ElideRight
         font.pointSize: fileName.font.pointSize
         text: {
-           var fileSize = Utils.formatSize(progressBar.to)
-           return Utils.formatSize(progressBar.value) + '/' + fileSize
+           var fileSize = Utils.formatSize(fileDownloader.totalBytes)
+           return Utils.formatSize(fileDownloader.readBytes) + '/' + fileSize
         }
      }
-  }
-
-  // ---------------------------------------------------------------------------
-  // fileDownloader.
-  // ---------------------------------------------------------------------------
-
-  Connections {
-     target: fileDownloader
-     onDownloadFinished: {
-     window.attachVirtualWindow(Utils.buildDialogUri('InfoDialog'), {
-     descriptionText:  qsTr('Codec DownloadFinished.')
-     }, function (status) {
-       if (status) {
-       unlockView()
-       window.setView('Home')
-       }
-     })
-    }
-    onTotalBytesChanged: {
-       progressBar.to = fileDownloader.getTotalBytes()
-    }
-	onReadBytesChanged: {
-       progressBar.value = fileDownloader.getReadBytes()
-    }
   }
 }
