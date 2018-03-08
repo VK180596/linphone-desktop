@@ -167,7 +167,7 @@ Column {
 
             checked: $codec.enabled
 
-            onClicked:  !checked? Logic.downloadCodec(fileDownloader) : view.model.enableCodec(index, !checked)
+            onClicked: !checked && $codec.needDownload? Logic.downloadCodec(fileDownloader) : view.model.enableCodec(index, !checked)
           }
         }
       }

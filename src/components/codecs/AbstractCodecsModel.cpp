@@ -166,6 +166,7 @@ void AbstractCodecsModel::addCodec (shared_ptr<linphone::PayloadType> &codec) {
   map["number"] = codec->getNumber();
   map["recvFmtp"] = ::Utils::coreStringToAppString(codec->getRecvFmtp());
   map["__codec"] = QVariant::fromValue(codec);
+  map["needDownload"] = false;
 
   mCodecs << map;
 }
@@ -175,6 +176,7 @@ void AbstractCodecsModel::addDownloadableCodec (const QString &mime, const QStri
 
   map["mime"] = mime;
   map["downloadUrl"] = downloadUrl;
-
+  map["needDownload"] = true;
+  
   mCodecs << map;
 }
